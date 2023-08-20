@@ -8,3 +8,14 @@
 #skills{
     float: left;
 }
+
+@import url(https://db.onlinewebfonts.com/c/c1b29cc6d453c3bdab47998bf7a7bf7b?family=P22+Dwiggins+W00+Uncial);
+@font-face {
+    font-family: "P22 Dwiggins W00 Uncial";
+    src: url("https://db.onlinewebfonts.com/t/c1b29cc6d453c3bdab47998bf7a7bf7b.eot");
+    src: url("https://db.onlinewebfonts.com/t/c1b29cc6d453c3bdab47998bf7a7bf7b.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/c1b29cc6d453c3bdab47998bf7a7bf7b.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/c1b29cc6d453c3bdab47998bf7a7bf7b.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/c1b29cc6d453c3bdab47998bf7a7bf7b.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/c1b29cc6d453c3bdab47998bf7a7bf7b.svg#P22 Dwiggins W00 Uncial")format("svg");
+}
