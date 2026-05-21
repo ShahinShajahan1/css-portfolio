@@ -1,334 +1,450 @@
-<html lang="en" data-bs-theme="dark">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shahin Shajahan — Hardware & Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="js/theme-init.js"></script>
 </head>
 <body>
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <img src="./images/Untitled-1.png" alt="" height="50px">
-            <span class="fs-4" style="font-family: 'Righteous', cursive;">My Portfolio</span>
+
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">
+      <img src="images/SS.png" alt="Shahin Shajahan" class="logo-dark">
+      <img src="images/SS-light.png" alt="Shahin Shajahan" class="logo-light">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to light mode" title="Toggle theme">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-layout">
+      <div class="hero-portrait">
+        <img src="images/shahin.png" alt="Shahin Shajahan">
+      </div>
+      <div class="hero-content">
+        <div class="hero-tag">Hardware &amp; Software Engineer · IT &amp; Networking</div>
+        <h1 class="hero-title">
+          I'm Shahin<br>
+          <em>Shajahan</em>
+        </h1>
+        <p class="hero-subtitle">
+          I manage and troubleshoot computer systems and networks — from Cisco and HP-Aruba infrastructure to software updates and secure day-to-day operations. B.Tech in Computer Science; always learning what's next in tech.
+        </p>
+        <div class="hero-cta">
+          <a href="#experience" class="btn-primary">View Experience</a>
+          <a href="#contact" class="btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      Scroll to explore
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-label reveal">About me</div>
+    <h2 class="section-title reveal">Reliable systems,<br>secure networks</h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm a Hardware &amp; Software Engineer with experience managing and troubleshooting computer systems and networks. I help with setting up devices, deploying software, and keeping everything running smoothly and securely.</p>
+        <p>At Hindalco Industries (Alupuram Factory), I lead efforts to improve IT processes and solve problems on the ground — managing assets, network configurations, and training new engineers. Previously at Topserv Infotech, I delivered on-site IT solutions as a Field Engineer.</p>
+        <p>With a B.Tech in Computer Science and certifications including CCNA and Microsoft Azure AZ-104, I combine infrastructure expertise with hands-on problem-solving. I'm always eager to learn — currently pursuing Palo Alto Firewall and Microsoft 365 Administrator training.</p>
+        <div class="about-highlights">
+          <span>Technical Support</span>
+          <span>Problem-solving</span>
+          <span>Teamwork</span>
+          <span>CCNA</span>
+          <span>Azure AZ-104</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- EXPERIENCE -->
+  <section class="section experience-section" id="experience">
+    <div class="section-label reveal">Work history</div>
+    <h2 class="section-title reveal">Professional experience</h2>
+    <div class="exp-list">
+      <article class="exp-item reveal">
+        <div class="exp-meta">Sept 2024 – April 2025</div>
+        <h3>Hardware Engineer</h3>
+        <p class="exp-org">HINDALCO Industries LTD · Alupuram Factory &amp; Works (AMC of Topserv Infotech)</p>
+        <ul>
+          <li>Managed all IT assets and provided IT support to staff across the facility.</li>
+          <li>Documented and maintained detailed reports of assets and network configurations.</li>
+          <li>Ensured software compliance with company policies and standards.</li>
+          <li>Led and trained newly joined hardware engineers.</li>
+          <li>Configured and replaced switches and access points; managed enterprise networks.</li>
+          <li>Collaborated with cross-functional teams to implement customized IT infrastructure solutions.</li>
+        </ul>
+      </article>
+      <article class="exp-item reveal">
+        <div class="exp-meta">Aug 2024 – May 2025</div>
+        <h3>Field Engineer</h3>
+        <p class="exp-org">Topserv Infotech</p>
+        <ul>
+          <li>Managed on-site operations and delivered IT solutions to clients.</li>
+          <li>Coordinated with vendors for warranty management and hardware/software procurement.</li>
+          <li>Implemented and assisted on network infrastructure — servers, routers, switches, and firewalls.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SKILLS -->
+  <section class="section skills-section" id="skills">
+    <div class="section-label reveal">What I do</div>
+    <h2 class="section-title reveal">Skills &amp; expertise</h2>
+    <div class="skills-grid skills-grid--wide">
+      <div class="skill-card reveal">
+        <div class="skill-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M2 12h3M19 12h3M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12"/>
+          </svg>
+        </div>
+        <h3>Network Engineering</h3>
+        <p>CCNA-trained. Configure and troubleshoot Cisco and HP-Aruba routers, switches, and APs — RIP, OSPF, NAT, PAT, ACLs, DHCP, inter-VLAN routing, HSRP, SSH, STP, EtherChannel, LACP, and IPv4/IPv6.</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+          </svg>
+        </div>
+        <h3>Hardware &amp; IT Support</h3>
+        <p>IT asset management, structured cabling (STP/UTP), switch port security, software patching, antivirus deployment, and administration of local and network resources.</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M18 10h-6M16 6H8M20 14H4"/><path d="M4 6h16v12H4z"/>
+          </svg>
+        </div>
+        <h3>Microsoft Azure</h3>
+        <p>AZ-104 certified through Emigo Network Experts. Foundational cloud administration skills to support modern hybrid IT environments.</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 16 16">
+            <path d="M5 6l-3 2 3 2M11 6l3 2-3 2M9 4l-2 8"/>
+          </svg>
+        </div>
+        <h3>Web Development</h3>
+        <p>Full-stack projects with HTML, CSS, JavaScript, Node.js, Express, and MongoDB — from APIs and blogs to interactive front-end apps.</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <h3>Leadership &amp; Collaboration</h3>
+        <p>Led hardware engineer onboarding at Hindalco. Strong at technical support, teamwork, and finding fast, effective solutions under pressure.</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+          </svg>
+        </div>
+        <h3>Linux &amp; Systems</h3>
+        <p>Linux Server Administration internship at Clado Solutions. Ongoing study in Palo Alto Firewall and Microsoft 365 administration.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="section-label reveal">Background</div>
+    <h2 class="section-title reveal">Education &amp; certifications</h2>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <div class="edu-year">2019 – 2023</div>
+        <h3>B.Tech, Computer Science &amp; Engineering</h3>
+        <p>Sree Narayana Group Institute of Science and Technology (SNGIST) · Ernakulam, North Paravur</p>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-year">2024</div>
+        <h3>Network Engineering CCNA 200-301</h3>
+        <p>Emigo Network Experts Pvt. Ltd · Palarivattom, Ernakulam</p>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-year">2024</div>
+        <h3>Computer Hardware</h3>
+        <p>Emigo Network Experts Pvt. Ltd · Palarivattom, Ernakulam</p>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-year">2025</div>
+        <h3>Microsoft Azure AZ-104</h3>
+        <p>Emigo Network Experts Pvt. Ltd · Palarivattom, Ernakulam</p>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-year">2024</div>
+        <h3>Linux Server Administration Internship</h3>
+        <p>Clado Solutions Pvt. Ltd · Palarivattom, Ernakulam</p>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-year">2017 – 2019</div>
+        <h3>Plus Two, Bio-Maths</h3>
+        <p>FMCT HSS · Karumalloor, Ernakulam</p>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-year">2017</div>
+        <h3>Computer Hardware</h3>
+        <p>G-Tech Computer Education · North Paravur, Ernakulam</p>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-year">2017</div>
+        <h3>SSLC</h3>
+        <p>DDSHS Karimpadam · North Paravur, Ernakulam</p>
+      </div>
+    </div>
+    <div class="edu-subsection reveal">
+      <h3>Currently studying</h3>
+      <div class="about-highlights">
+        <span>Palo Alto Firewall</span>
+        <span>Microsoft 365 Associate Administrator</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-label reveal">Selected work</div>
+    <h2 class="section-title reveal">Web projects I've built</h2>
+    <p class="reveal section-intro">Personal and academic projects from my Computer Science background — APIs, full-stack apps, and front-end experiments.</p>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-thumb t1">
+          <div class="project-thumb-gradient">ðŸŽ­</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">ExpressJS</span><span class="tag">Axios</span><span class="tag">API</span>
+          </div>
+          <h3 class="project-title">Jokes Web App</h3>
+          <p class="project-desc">A fun web application that fetches jokes from an external API using Axios and serves them with an Express backend. Clean UX with a focus on quick laughs.</p>
+          <a href="https://fun-time-o1rl.onrender.com" target="_blank" class="project-link">
+            View live
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
           </a>
-        </header>
-      </div>
-      <div class="px-4 pt-5 my-5 text-center border-bottom">
-        <h1 class="display-4 fw-bold text-body-emphasis" style="font-family: 'Amatic SC', cursive;">I'm Shahin Shajahan</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">a programmer and an editor.</p>
-        </div>
-        <div class="overflow-hidden" style="max-height: 70vh;">
-          <div class="container px-5">
-            <img src="./images/pro.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="500px" height="500px" loading="lazy">
-          </div>
-        </div>
-      </div>
-      <div class="px-4 py-5 my-5 text-center">
-        <img class="d-block mx-auto mb-4" src="./images/img.png" alt="" width="150px" height="150px">
-        <h1 class="display-5 fw-bold text-body-emphasis" style="font-family: 'Amatic SC', cursive;">Hello,</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">Welcome to my Portfolio, Here I'm showcasing some of my skills and projects I've done. My first expertice was in designing and editing in Photoshop. Later I got interested in Python and excelled in it. Now I'm working om my Web- Development skills.</p>
         </div>
       </div>
 
-      <div class="container px-4 py-5" id="featured-3">
-        <h2 class="pb-2 border-bottom" style="font-family: 'Righteous', cursive;">My Skills</h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div class="feature col">
-            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3" style="border-radius: 0.75rem;">
-              <svg xmlns="http://www.w3.org/2000/svg"  width="50" height="50" fill="currentColor" class="bi bi-filetype-html" viewBox="0 0 16 16" style="padding: 10px;" >
-                <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5Zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662H6.515Zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999h.706Zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
-              </svg>
-            </div>
-            <h3 class="fs-2 text-body-emphasis">Web-Development</h3>
-            <p>I am captivated by web development due to its limitless creative potential and real-world impact. I can bring ideas to life, crafting interactive and visually engaging experiences for users around the world. It's a field where innovation meets practicality, and I find immense satisfaction in being a part of shaping the digital landscape.</p>
-          </div>
-          <div class="feature col">
-            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3" style="border-radius: 0.75rem;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-filetype-py" viewBox="0 0 16 16" style="padding: 10px;">
-                <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H7v-1h5a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM0 11.85h1.6c.289 0 .533.06.732.179.201.117.355.276.46.477.105.201.158.427.158.677 0 .25-.054.476-.16.677-.106.199-.26.357-.464.474a1.452 1.452 0 0 1-.732.173H.79v1.342H0V11.85Zm2.06 1.714a.795.795 0 0 0 .085-.381c0-.227-.062-.4-.185-.521-.123-.122-.294-.182-.513-.182H.788v1.406h.66a.794.794 0 0 0 .374-.082.574.574 0 0 0 .238-.24Zm2.963.75v1.535H4.23v-1.52L2.89 11.85h.876l.853 1.696h.032l.856-1.696h.855l-1.339 2.464Z"/>
-              </svg>
-            </div>
-            <h3 class="fs-2 text-body-emphasis">Python</h3>
-            <p>
-              I use Python due to its simplicity and versatility. Its clean syntax and readable code make programming a joy, allowing me to focus on solving problems rather than struggling with complex syntax. The community's support and vast resources help in having a fun learning experience. Overall, Python's user-friendly nature and powerful capabilities make it my preferred language.</p>
-
-          </div>
-          <div class="feature col">
-            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3" style="border-radius: 0.75rem;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-camera2" viewBox="0 0 16 16" style="padding: 10px;">
-                <path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z"/>
-                <path d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1zM2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0zM14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z"/>
-              </svg>
-            </div>
-            <h3 class="fs-2 text-body-emphasis">Photoshop</h3>
-            <p>I absolutely love Photoshop for its unparalleled creative power and versatility. With its vast veriety of tools and features, I can transform my ideas into stunning visual realities. Whether it's retouching photos to perfection, crafting intricate designs, or seamlessly merging elements together, Photoshop empowers me to explore endless artistic possibilities.</p>
-
-          </div>
+      <div class="project-card reveal">
+        <div class="project-thumb t2">
+          <div class="project-thumb-gradient">ðŸ“</div>
         </div>
-      </div>
-
-
-      <div class="container px-4 py-5" id="custom-cards">
-        <h2 class="pb-2 border-bottom" style="font-family: 'Righteous', cursive;">My Projects</h2>
-    
-        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://securityintelligence.com/wp-content/uploads/2023/07/API-Application-Programming-Interface.-Software-development-tool.-Business-modern-technology-internet-and-networking-concept.-3d-illustration.jpeg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-shadow: 2px 2px 4px rgb(38, 33, 90)">Jokes Web App</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <a href="https://fun-time-o1rl.onrender.com" class="btn btn-light">
-                        <b>Chekout</b>
-                    </a>                    
-                    <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                    <small style="font-weight: bold;text-shadow: 2px 2px 5px black;">ExpressJS</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                    <small style="font-weight: bold;text-shadow: 2px 2px 5px black;">Axios</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                    <small style="font-weight: bold;text-shadow: 2px 2px 5px black;">API</small>
-                  </li>
-                </ul>
-              </div>
-            </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Express</span><span class="tag">Node</span><span class="tag">MongoDB</span>
           </div>
-
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/blog.jpg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-shadow: 2px 2px 4px rgb(38, 33, 90)">Blog Web App</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <a href="https://blog-web-app-kt0u.onrender.com" class="btn btn-light">
-                        <b>Chekout</b>
-                    </a>                    
-                    <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                    <small style="font-weight: bold;text-shadow: 2px 2px 5px black;">ExpressJS</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                    <small style="font-weight: bold;text-shadow: 2px 2px 5px black;">NodeJS</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                    <small style="font-weight: bold;text-shadow: 2px 2px 5px black;">MongoDB</small>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/simon.jpg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-shadow: 2px 2px 4px rgb(38, 33, 90)">Simon Game</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <a href="https://shahinshajahan1.github.io/simon-game/" class="btn btn-light">
-                        <b>Chekout</b>
-                    </a>                    
-                    <li class="d-flex align-items-center ">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                    <small style="font-weight: bold;text-shadow: 2px 2px 5px black;">HTML</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                    <small style="font-weight: bold;text-shadow: 2px 2px 5px black;">CSS</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                    <small style="font-weight: bold;text-shadow: 2px 2px 5px black;">JS</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                    <small style="font-weight: bold;text-shadow: 2px 2px 5px black;">JQuery</small>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/drumkit.png');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-shadow: 2px 2px 4px rgb(38, 33, 90)">Interactive Drum Kit</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <a href="https://shahinshajahan1.github.io/drum-kit/" class="btn btn-light">
-                        <b>Chekout</b>
-                    </a>                    
-                    <li class="d-flex align-items-center ">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                    <small style="font-weight: bold;text-shadow: 2px 2px 5px black;">HTML</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                    <small style="font-weight: bold;text-shadow: 2px 2px 5px black;">CSS</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                    <small style="font-weight: bold;text-shadow: 2px 2px 5px black;">JS</small>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-    
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/pass.jpg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-shadow: 2px 2px 4px rgb(38, 33, 90)">Password Generator</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <a href="https://shahinshajahan1.github.io/password-generator/" class="btn btn-light">
-                      <b>Chekout</b>
-                    </a>                    
-                    <li class="d-flex align-items-center ">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                    <small style="font-weight: bold;text-shadow: 2px 2px 5px black;">HTML</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                    <small style="font-weight: bold;text-shadow: 2px 2px 5px black;">CSS</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                    <small style="font-weight: bold;text-shadow: 2px 2px 5px black;">JS</small>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-    
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-1g" id="n1" style="background-image: url('./images/tindog.jpg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">Tindog: tinder for dogs.</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <a href="https://shahinshajahan1.github.io/tindog/" class="btn btn-light">
-                      <b>Chekout</b>
-                    </a>                  
-                  </li>
-                  <li class="d-flex align-items-center ">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                    <small style="font-weight: bold; text-shadow: 2px 2px 5px black;">HTML</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                    <small style="font-weight: bold;text-shadow: 2px 2px 5px black;">CSS</small>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/mondrian.jpg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">Mondrian CSS Art</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <a href="https://shahinshajahan1.github.io/Mondrian-project/" class="btn btn-light">
-                      <b>Chekout</b>
-                    </a>                    
-                  </li>
-                  <li class="d-flex align-items-center ">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                    <small style="font-weight: bold;text-shadow: 2px 2px 5px black;">CSS</small>
-                  </li>
-                  </li>                 
-                </ul>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/motivation.png');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">Meme Motivation</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <a href="https://shahinshajahan1.github.io/meme-motivation/" class="btn btn-light">
-                      <b>Chekout</b>
-                    </a>                    
-                  </li>
-                  <li class="d-flex align-items-center ">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                    <small style="font-weight: bold;text-shadow: 2px 2px 5px black;">CSS</small>
-                  </li>
-                  </li>                 
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      
-      <hr>
-
-      <div class="bg-dark text-secondary px-4 py-5 text-center">
-        <div class="py-5">
-          <h1 class="display-5 fw-bold text-white" style="font-family: 'Amatic SC', cursive;">Get in Touch</h1>
-          <div class="col-lg-6 mx-auto">
-            <p class="fs-5 mb-4">It would be fantastic to have discussions and explore new possibilities together. I believe that collaborating could lead to some exciting outcomes, whether it's brainstorming, problem-solving, or simply catching up, I'm eager to connect. So feel free to reach out to me for any queries 😄. </p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <a href="mailto:shahinshajahan987@gmail.com"><button id="openButton" type="button" class="btn btn-outline-light btn-lg px-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
-                  <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
-                  <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
-                </svg>
-                </button></a>
-                <a href="https://github.com/ShahinShajahan1"><button type="button" class="btn btn-outline-light btn-lg px-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                  </svg>
-                </button></a> 
-              <a href="https://www.instagram.com/shahinshajahan_/"><button type="button" class="btn btn-outline-light btn-lg px-4" class="email-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                </svg>
-              </button></a>
-              <a href="https://twitter.com/shahinshajahan5"><button type="button" class="btn btn-outline-light btn-lg px-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                </svg>
-              </button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <p class="col-md-4 mb-0 text-body-secondary" >© 2023 Shahin Shajahan</p>
-      
-          <a href="#" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <img src="./images/Untitled-1.png" alt="" height="50px" style="margin-top: 17px;">
-
+          <h3 class="project-title">Blog Web App</h3>
+          <p class="project-desc">A full-stack blog platform with persistent storage. Create, edit, and publish posts backed by MongoDB.</p>
+          <a href="https://blog-web-app-kt0u.onrender.com" target="_blank" class="project-link">
+            View live
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
           </a>
-        </footer>
+        </div>
       </div>
 
+      <div class="project-card reveal">
+        <div class="project-thumb t3">
+          <div class="project-thumb-gradient">ðŸŽ®</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">jQuery</span>
+          </div>
+          <h3 class="project-title">Simon Game</h3>
+          <p class="project-desc">The classic memory game reimagined for the browser. Built with jQuery for smooth event handling and progressive difficulty.</p>
+          <a href="https://shahinshajahan1.github.io/simon-game/" target="_blank" class="project-link">
+            View live
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </a>
+        </div>
+      </div>
 
+      <div class="project-card reveal">
+        <div class="project-thumb t4">
+          <div class="project-thumb-gradient">ðŸ¥</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+          </div>
+          <h3 class="project-title">Interactive Drum Kit</h3>
+          <p class="project-desc">A keyboard-driven drum machine that plays samples on key presses. Responsive, accessible, and surprisingly fun.</p>
+          <a href="https://shahinshajahan1.github.io/drum-kit/" target="_blank" class="project-link">
+            View live
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </a>
+        </div>
+      </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      <div class="project-card reveal">
+        <div class="project-thumb t5">
+          <div class="project-thumb-gradient">ðŸ”</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+          </div>
+          <h3 class="project-title">Password Generator</h3>
+          <p class="project-desc">Generate strong, customisable passwords instantly in the browser. No data sent anywhere — fully client-side.</p>
+          <a href="https://shahinshajahan1.github.io/password-generator/" target="_blank" class="project-link">
+            View live
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-thumb t6">
+          <div class="project-thumb-gradient">ðŸ¶</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span>
+          </div>
+          <h3 class="project-title">Tindog</h3>
+          <p class="project-desc">Tinder for dogs — a fun landing page clone demonstrating modern layout techniques and responsive design.</p>
+          <a href="https://shahinshajahan1.github.io/tindog/" target="_blank" class="project-link">
+            View live
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-thumb t7">
+          <div class="project-thumb-gradient">ðŸŽ¨</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="tag">CSS</span></div>
+          <h3 class="project-title">Mondrian CSS Art</h3>
+          <p class="project-desc">Pure CSS recreation of Piet Mondrian's geometric compositions. A study in CSS Grid and the art of restraint.</p>
+          <a href="https://shahinshajahan1.github.io/Mondrian-project/" target="_blank" class="project-link">
+            View live
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-thumb t8">
+          <div class="project-thumb-gradient">ðŸ˜„</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="tag">CSS</span></div>
+          <h3 class="project-title">Meme Motivation</h3>
+          <p class="project-desc">A cheerful motivational meme generator. Sometimes you just need to laugh at your to-do list.</p>
+          <a href="https://shahinshajahan1.github.io/meme-motivation/" target="_blank" class="project-link">
+            View live
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="section-label reveal">Get in touch</div>
+    <h2 class="section-title reveal">Let's build something<br>together</h2>
+    <p class="reveal">Open to IT roles, networking opportunities, freelance work, and collaborations. — happy to connect.</p>
+    <div class="contact-details reveal">
+      <span>Ernakulam, Kerala</span>
+      <a href="mailto:shahinshajahan987@gmail.com">shahinshajahan987@gmail.com</a>
+      <a href="tel:+918138816933">+91 81388 16933</a>
+    </div>
+    <div class="contact-links reveal">
+      <a href="tel:+918138816933" class="contact-btn">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call me
+      </a>
+      <a href="mailto:shahinshajahan987@gmail.com" class="contact-btn">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Email me
+      </a>
+      <a href="https://github.com/ShahinShajahan1" target="_blank" class="contact-btn">
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        GitHub
+      </a>
+      <a href="https://www.instagram.com/shahinshajahan_/" target="_blank" class="contact-btn">
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg>
+        Instagram
+      </a>
+      <a href="https://twitter.com/shahinshajahan5" target="_blank" class="contact-btn">
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg>
+        Twitter
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Shahin Shajahan · Hardware &amp; Software Engineer · IT &amp; Networking</p>
+    <a href="#" class="footer-top">Back to top ↑</a>
+  </footer>
+
+  <script src="js/main.js" defer></script>
 </body>
 </html>
