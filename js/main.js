@@ -1,5 +1,29 @@
 const themeToggle = document.getElementById('themeToggle');
 const root = document.documentElement;
+const scrollRestoreKey = 'cssPortfolioScrollPos';
+
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+function restoreScrollPosition() {
+  const navigationEntries = performance.getEntriesByType?.('navigation');
+  const isReload = navigationEntries?.[0]?.type === 'reload' || performance.navigation?.type === 1;
+  if (!isReload) return;
+
+  const savedY = sessionStorage.getItem(scrollRestoreKey);
+  if (savedY !== null) {
+    window.scrollTo(0, Number(savedY));
+  }
+}
+
+function saveScrollPosition() {
+  sessionStorage.setItem(scrollRestoreKey, String(window.scrollY));
+}
+
+window.addEventListener('beforeunload', saveScrollPosition);
+window.addEventListener('pagehide', saveScrollPosition);
+window.addEventListener('load', restoreScrollPosition);
 
 function setTheme(theme) {
   root.setAttribute('data-theme', theme);
