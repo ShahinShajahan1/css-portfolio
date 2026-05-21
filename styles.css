@@ -815,6 +815,31 @@ footer p { color: var(--muted-dim); font-size: 0.85rem; }
   }
 }
 
+body.touch-cursor .cursor-dot,
+body.touch-cursor .cursor-ring,
+body.touch-cursor .cursor-glow {
+  opacity: 1;
+}
+body.touch-cursor.cursor-hidden .cursor-dot,
+body.touch-cursor.cursor-hidden .cursor-ring,
+body.touch-cursor.cursor-hidden .cursor-glow {
+  opacity: 0;
+}
+body.touch-cursor.cursor-hover .cursor-ring {
+  width: 52px;
+  height: 52px;
+  border-color: var(--accent2);
+  background: var(--accent-muted);
+}
+body.touch-cursor.cursor-hover .cursor-dot {
+  transform: translate(-50%, -50%) scale(1.6);
+  background: var(--accent2);
+}
+body.touch-cursor.cursor-hover .cursor-glow {
+  opacity: 0.85;
+  transform: translate(-50%, -50%) scale(1.15);
+}
+
 /* â”€â”€ RESPONSIVE â”€â”€ */
 @media (max-width: 900px) {
   nav { padding: 1.25rem 2rem; }
