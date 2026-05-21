@@ -1,4 +1,4 @@
-﻿*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root,
 [data-theme="dark"] {
@@ -524,9 +524,7 @@ nav {
 .project-thumb-gradient {
   position: absolute; inset: 0;
   display: flex; align-items: center; justify-content: center;
-  color: rgba(255,255,255,0.95);
   font-size: 3rem;
-  line-height: 1;
 }
 .project-body {
   padding: 1.75rem;
@@ -695,44 +693,6 @@ footer p { color: var(--muted-dim); font-size: 0.85rem; }
 
 /* â”€â”€ DIVIDER â”€â”€ */
 .divider { height: 1px; background: var(--border); }
-
-/* â”€â”€ TOUCH-HOVER EQUIVALENTS (for mobile/touch devices) â”€â”€ */
-/* Apply the same visual effects when an element gains the `.hover` class (toggled via JS). */
-.theme-toggle.hover { border-color: var(--accent); background: var(--accent-muted); }
-.nav-links a.hover { color: var(--text); }
-.btn-primary.hover { transform: translateY(-2px); box-shadow: 0 8px 32px var(--accent-shadow); }
-.btn-ghost.hover { background: var(--surface); border-color: var(--text); }
-.exp-item.hover { border-color: var(--border-bright); }
-.edu-card.hover { border-color: var(--border-bright); }
-.skill-card.hover { border-color: var(--border-bright); transform: translateY(-4px); }
-.skill-card.hover::before { transform: scaleX(1); }
-.project-card.hover { transform: translateY(-6px); border-color: var(--border-bright); }
-.project-link.hover { gap: 0.75rem; }
-.project-link.hover svg { transform: translateX(3px); }
-.contact-details a.hover { color: var(--accent); }
-.contact-btn.hover { background: var(--surface2); border-color: var(--text); transform: translateY(-2px); }
-.footer-top.hover { color: var(--accent); }
-
-/* Card shadow variants for light/dark themes when using `.hover` */
-[data-theme="light"] .skill-card.hover,
-[data-theme="light"] .project-card.hover,
-[data-theme="light"] .exp-item.hover,
-[data-theme="light"] .edu-card.hover,
-[data-theme="light"] .contact-btn.hover {
-  box-shadow:
-    0 20px 50px rgba(15, 23, 42, 0.16),
-    0 8px 20px rgba(15, 23, 42, 0.1);
-}
-[data-theme="dark"] .skill-card.hover,
-[data-theme="dark"] .project-card.hover,
-[data-theme="dark"] .exp-item.hover,
-[data-theme="dark"] .edu-card.hover,
-[data-theme="dark"] .contact-btn.hover {
-  box-shadow:
-    0 22px 55px rgba(0, 0, 0, 0.55),
-    0 10px 24px rgba(0, 0, 0, 0.4),
-    0 0 24px rgba(34, 211, 238, 0.08);
-}
 
 /* â”€â”€ KEYFRAMES â”€â”€ */
 @keyframes fadeUp {
