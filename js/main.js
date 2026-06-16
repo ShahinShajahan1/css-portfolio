@@ -32,8 +32,7 @@ function setTheme(theme) {
     'aria-label',
     theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
   );
-  themeToggle.setAttribute('aria-pressed', String(theme === 'dark'));
-  themeToggle.title = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+  themeToggle.title = theme === 'dark' ? 'Light mode' : 'Dark mode';
 }
 
 themeToggle.addEventListener('click', () => {
