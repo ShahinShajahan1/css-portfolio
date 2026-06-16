@@ -1,4 +1,6 @@
 const themeToggle = document.getElementById('themeToggle');
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('nav');
 const root = document.documentElement;
 const scrollRestoreKey = 'cssPortfolioScrollPos';
 
@@ -39,6 +41,20 @@ themeToggle.addEventListener('click', () => {
   const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
   setTheme(next);
 });
+
+if (navToggle && nav) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('nav-open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  nav.querySelectorAll('.nav-links a').forEach((link) => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('nav-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
 
 setTheme(root.getAttribute('data-theme') || 'dark');
 
